@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Process from '../components/Process.astro';
+import CTA from '../components/CTA.astro';
+---
+<Layout title="Fabrication — Marin Profils" description="Découvrez la fabrication des profils acier Marin Profils, de la bobine d'acier au chantier.">
+  <section class="page-hero">
+    <div class="container"><p class="kicker">Savoir-faire</p><h1>Notre fabrication</h1><p class="lead">Une production locale, maîtrisée et pensée pour les professionnels du bâtiment.</p></div>
+  </section>
+  <section class="section">
+    <div class="container grid two">
+      <img class="round" src="/images/atelier-vue-generale.jpg" alt="Atelier Marin Profils" />
+      <div><h2>Un atelier de profilage en Dordogne</h2><p class="lead">Nous transformons la bobine d'acier prélaqué en profils de couverture, bardage et tôle imitation tuile. Chaque commande est préparée avec une logique professionnelle : régularité, longueur, protection et délai.</p></div>
+    </div>
+  </section>
+  <Process />
+  <CTA />
+</Layout>
+<style>.page-hero{padding:96px 0;background:var(--soft)}.round{border-radius:32px;box-shadow:var(--shadow)}</style>

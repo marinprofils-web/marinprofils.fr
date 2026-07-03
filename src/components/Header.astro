@@ -1,0 +1,21 @@
+<header class="site-header">
+  <div class="container nav">
+    <a href="/" class="brand" aria-label="Marin Profils accueil"><img src="/logo.svg" alt="Marin Profils" /></a>
+    <nav class="menu" aria-label="Navigation principale">
+      <a href="/produits/">Produits</a>
+      <a href="/fabrication/">Fabrication</a>
+      <a href="/couleurs/">Couleurs</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <a class="btn primary small" href="/contact/">Demander un devis</a>
+  </div>
+</header>
+<style>
+.site-header { position: sticky; top:0; z-index:30; background:rgba(255,255,255,.92); backdrop-filter: blur(18px); border-bottom:1px solid rgba(0,0,0,.06); }
+.nav { height:82px; display:flex; align-items:center; justify-content:space-between; gap:22px; }
+.brand img { width:160px; height:auto; }
+.menu { display:flex; gap:28px; font-weight:800; color:#313743; }
+.menu a:hover { color:var(--blue); }
+.small { padding:12px 20px; }
+@media(max-width:820px){ .nav{height:auto; padding:14px 0; flex-wrap:wrap}.menu{order:3;width:100%;overflow:auto;gap:18px}.brand img{width:135px}.small{padding:10px 14px;font-size:.9rem}}
+</style>

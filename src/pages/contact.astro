@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Contact — Marin Profils" description="Contactez Marin Profils pour une demande de devis professionnel.">
+  <section class="page-hero"><div class="container"><p class="kicker">Contact</p><h1>Demande de devis professionnel</h1><p class="lead">Indiquez votre produit, vos longueurs, coloris, quantités et lieu de livraison.</p></div></section>
+  <section class="section">
+    <div class="container grid two">
+      <div class="card card-pad"><h2>Coordonnées</h2><p><strong>Marin Profils</strong><br />Marsac-sur-l'Isle — Dordogne<br />France</p><p style="margin-top:18px"><a href="mailto:marinprofils@gmail.com">marinprofils@gmail.com</a></p></div>
+      <form class="card card-pad" name="devis" method="post" data-netlify="true">
+        <input type="hidden" name="form-name" value="devis" />
+        <label>Nom / entreprise<input name="entreprise" required /></label>
+        <label>Email<input type="email" name="email" required /></label>
+        <label>Téléphone<input name="telephone" /></label>
+        <label>Message<textarea name="message" rows="6" placeholder="Produit, longueurs, couleur, quantité, livraison..."></textarea></label>
+        <button class="btn primary" type="submit">Envoyer la demande</button>
+      </form>
+    </div>
+  </section>
+</Layout>
+<style>.page-hero{padding:96px 0;background:var(--soft)}label{display:block;font-weight:800;margin-bottom:16px}input,textarea{width:100%;border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:7px;font:inherit}button{border:0;cursor:pointer}</style>

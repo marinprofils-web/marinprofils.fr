@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Products from '../components/Products.astro';
+import CTA from '../components/CTA.astro';
+---
+<Layout title="Produits — Marin Profils" description="Tôle imitation tuile, bac acier, bardage et accessoires pour professionnels.">
+  <section class="page-hero"><div class="container"><p class="kicker">Gamme</p><h1>Produits acier sur mesure</h1><p class="lead">Des profils adaptés aux chantiers de couverture, bardage et bâtiments professionnels.</p></div></section>
+  <Products />
+  <section class="section soft"><div class="container grid three">
+    <article class="card card-pad"><h3>Accessoires</h3><p>Faîtages, rives, closoirs, visserie et éléments complémentaires selon projet.</p></article>
+    <article class="card card-pad"><h3>Coupe sur mesure</h3><p>Longueurs produites au plus près du besoin chantier pour limiter les pertes.</p></article>
+    <article class="card card-pad"><h3>Réservé aux pros</h3><p>Offres, délais et conditions adaptées aux artisans, négoces et industriels.</p></article>
+  </div></section>
+  <CTA />
+</Layout>
+<style>.page-hero{padding:96px 0;background:var(--soft)}</style>
