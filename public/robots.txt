@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://marinprofils.fr/sitemap.xml
+Sitemap: https://marinprofils.fr/sitemap-index.xml

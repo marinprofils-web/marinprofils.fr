@@ -1,19 +1,12 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Process from '../components/Process.astro';
-import CTA from '../components/CTA.astro';
+import Layout from '../layouts/Layout.astro'; import Process from '../components/Process.astro'; import CTA from '../components/CTA.astro';
 ---
-<Layout title="Fabrication — Marin Profils" description="Découvrez la fabrication des profils acier Marin Profils, de la bobine d'acier au chantier.">
-  <section class="page-hero">
-    <div class="container"><p class="kicker">Savoir-faire</p><h1>Notre fabrication</h1><p class="lead">Une production locale, maîtrisée et pensée pour les professionnels du bâtiment.</p></div>
-  </section>
-  <section class="section">
-    <div class="container grid two">
-      <img class="round" src="/images/atelier-vue-generale.jpg" alt="Atelier Marin Profils" />
-      <div><h2>Un atelier de profilage en Dordogne</h2><p class="lead">Nous transformons la bobine d'acier prélaqué en profils de couverture, bardage et tôle imitation tuile. Chaque commande est préparée avec une logique professionnelle : régularité, longueur, protection et délai.</p></div>
-    </div>
-  </section>
+<Layout title="Fabrication | Marin Profils" description="Découvrez l'atelier Marin Profils : bobines acier, profilage, découpe sur mesure et préparation des commandes.">
+  <section class="page-hero"><div class="container"><span class="eyebrow" style="color:white">Fabrication française</span><h1 class="title">Notre atelier de profilage en Dordogne</h1><p class="lead">Marin Profils fabrique ses tôles et bardages directement dans son atelier, de la bobine d'acier au produit fini.</p></div></section>
+  <section class="section"><div class="container split"><img src="/images/atelier.jpg" alt="Atelier Marin Profils" style="border-radius:32px;box-shadow:var(--shadow)"/><div><h2 class="title">Maîtriser chaque étape</h2><p class="lead">La fabrication interne permet de maîtriser les délais, les longueurs, le contrôle qualité et la préparation des commandes. Cette approche distingue Marin Profils d'un simple revendeur.</p></div></div></section>
   <Process />
+  <section class="section soft"><div class="container grid" style="grid-template-columns:repeat(3,1fr)">
+    <img class="card" src="/images/bobine-acier.jpg" alt="Bobine acier"/><img class="card" src="/images/galets-profilage.jpg" alt="Galets de profilage"/><img class="card" src="/images/machine-detail.jpg" alt="Machine de profilage"/>
+  </div></section>
   <CTA />
 </Layout>
-<style>.page-hero{padding:96px 0;background:var(--soft)}.round{border-radius:32px;box-shadow:var(--shadow)}</style>

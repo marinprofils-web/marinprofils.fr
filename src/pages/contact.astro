@@ -1,20 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="Contact — Marin Profils" description="Contactez Marin Profils pour une demande de devis professionnel.">
-  <section class="page-hero"><div class="container"><p class="kicker">Contact</p><h1>Demande de devis professionnel</h1><p class="lead">Indiquez votre produit, vos longueurs, coloris, quantités et lieu de livraison.</p></div></section>
-  <section class="section">
-    <div class="container grid two">
-      <div class="card card-pad"><h2>Coordonnées</h2><p><strong>Marin Profils</strong><br />Marsac-sur-l'Isle — Dordogne<br />France</p><p style="margin-top:18px"><a href="mailto:marinprofils@gmail.com">marinprofils@gmail.com</a></p></div>
-      <form class="card card-pad" name="devis" method="post" data-netlify="true">
-        <input type="hidden" name="form-name" value="devis" />
-        <label>Nom / entreprise<input name="entreprise" required /></label>
-        <label>Email<input type="email" name="email" required /></label>
-        <label>Téléphone<input name="telephone" /></label>
-        <label>Message<textarea name="message" rows="6" placeholder="Produit, longueurs, couleur, quantité, livraison..."></textarea></label>
-        <button class="btn primary" type="submit">Envoyer la demande</button>
-      </form>
-    </div>
-  </section>
+<Layout title="Contact | Marin Profils" description="Contactez Marin Profils pour une demande de devis professionnel en tôles acier, couverture et bardage.">
+  <section class="page-hero"><div class="container"><span class="eyebrow" style="color:white">Contact</span><h1 class="title">Demande de devis professionnel</h1><p class="lead">Marin Profils travaille exclusivement avec les professionnels. Les particuliers sont orientés vers le site dédié tôle imitation tuile.</p></div></section>
+  <section class="section"><div class="container grid contact-grid">
+    <form class="card form" style="padding:28px" name="contact" method="post" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="entreprise" placeholder="Entreprise" required />
+      <input name="nom" placeholder="Nom / contact" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input name="telephone" placeholder="Téléphone" />
+      <select name="produit"><option>Produit concerné</option><option>Tôle imitation tuile</option><option>Bac acier</option><option>Bardage</option><option>Accessoires</option></select>
+      <textarea name="message" placeholder="Longueurs, quantités, couleur, lieu de livraison..."></textarea>
+      <button class="btn primary" type="submit">Envoyer la demande</button>
+    </form>
+    <div class="card" style="padding:34px"><h2 class="title" style="font-size:2.1rem">Marin Profils</h2><p class="lead">Fabricant de profils acier en Dordogne pour professionnels du bâtiment, négoces et industriels.</p><div class="map">Carte / coordonnées à compléter</div><p><strong>Particulier ?</strong><br/>Rendez-vous sur le site dédié : tole-imitation-tuile.fr</p></div>
+  </div></section>
 </Layout>
-<style>.page-hero{padding:96px 0;background:var(--soft)}label{display:block;font-weight:800;margin-bottom:16px}input,textarea{width:100%;border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:7px;font:inherit}button{border:0;cursor:pointer}</style>

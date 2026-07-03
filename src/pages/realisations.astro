@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro'; import CTA from '../components/CTA.astro';
+---
+<Layout title="Réalisations | Marin Profils" description="Aperçu des fabrications Marin Profils : tôles, bardages, commandes et préparation atelier.">
+  <section class="page-hero"><div class="container"><span class="eyebrow" style="color:white">Réalisations</span><h1 class="title">Fabrications et projets</h1><p class="lead">Galerie évolutive des produits fabriqués et préparés par Marin Profils.</p></div></section>
+  <section class="section"><div class="container grid" style="grid-template-columns:repeat(3,1fr)">
+    <img class="card" src="/images/tole-sortie.jpg" alt="Tôle sortie machine"/><img class="card" src="/images/palette.jpg" alt="Palette préparée"/><img class="card" src="/images/stock-toles.jpg" alt="Stock de tôles"/>
+  </div></section>
+  <CTA />
+</Layout>
