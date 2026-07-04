@@ -68,3 +68,18 @@ img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
 .dot.stock { background: #16a34a; }
 .dot.order { background: #f59e0b; }
 @media(max-width:900px) {  .availability-box,  .colors {    grid-template-columns: 1fr;  }}
+
+/* ===== chapitre COLORS tableau épaisseur ===== */
+.thickness-guide{  margin-top:70px;}
+.table-wrap{  margin-top:28px;  overflow-x:auto;}
+.usage-table{  width:100%;  border-collapse:collapse;  background:#fff;  border-radius:22px;  overflow:hidden;  box-shadow:0 14px 40px rgba(0,0,0,.08);}
+.usage-table thead{  background:var(--blue);  color:#fff;}
+.usage-table th,
+.usage-table td{  padding:18px;  text-align:center;  border-bottom:1px solid #edf1f7;}
+.usage-table th{  font-family:Saira,Montserrat,sans-serif;  font-size:1rem;}
+.usage-table td:first-child{  text-align:left;  font-family:Saira,Montserrat,sans-serif;  font-size:1.15rem;}
+.yes,
+.no{  display:inline-flex;  padding:7px 12px;  border-radius:999px;  font-weight:800;  font-size:.82rem;}
+.yes{  background:#dcfce7;  color:#15803d;}
+.no{  background:#fee2e2;  color:#b91c1c;}
+.table-note{  margin-top:18px;  color:var(--muted);  line-height:1.7;}
