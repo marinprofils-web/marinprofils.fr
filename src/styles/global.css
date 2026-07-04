@@ -29,7 +29,7 @@ img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
 @media(max-width:900px){.menu{display:none}.mobile-toggle{display:block}.stats-grid,.products,.process,.colors,.split,.footer-grid,.contact-grid,.cta{grid-template-columns:1fr}.section{padding:65px 0}.hero{min-height:82vh}.hero h1{font-size:3rem}.stats{margin-top:0}.float-card{position:static;margin-top:16px}.cta{padding:34px}.nav{height:68px}}
 
 
-
+/* ===== logo header ===== */
 .brand { background: rgba(255,255,255,.97);  padding: 6px 10px;  border-radius: 22px;  box-shadow: 0 8px 22px rgba(0,0,0,.18);  min-width: unset;}
 .brand-logo {  height: 52px;  width: auto;  display: block;}
 
@@ -44,8 +44,18 @@ img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
 .header.scrolled .quote-btn {  color: var(--dark);  background: white;}
 .header.scrolled .quote-btn:hover {  color: white;  background: var(--blue);}
 
+/* ===== icone hero ===== */
 .hero-badges span{    display:flex;    align-items:center;    gap:10px;    padding:10px 16px;    border:1px solid rgba(255,255,255,.22);    border-radius:999px;  background:rgba(255,255,255,.08);    backdrop-filter:blur(8px);    font-weight:800;}
 .badge-icon{  width:22px;  height:22px;  object-fit:contain;  flex-shrink:0;  border-radius:50%;}
 
-.swatch{  height:120px;  border-radius:18px;  overflow:hidden;  border:1px solid rgba(0,0,0,.12);}
-.swatch img{  width:100%;  height:100%;  object-fit:cover;  display:block;}
+/* ===== chapitre COLORS ===== */
+.availability-box{  margin:28px 0;  padding:22px;  border-radius:22px;  background:#fff;  border:1px solid var(--line);}
+.finish-block{  margin-top:46px;}
+.finish-block h3{  font-family:Saira,Montserrat,sans-serif;  font-size:1.8rem;  margin-bottom:12px;}
+.finish-block h4{  margin:22px 0 14px;  color:var(--blue);}
+.dot{  display:inline-block;  width:10px;  height:10px;  border-radius:50%;  margin-right:8px;}
+.dot.stock{background:#16a34a;}
+.dot.order{background:#f59e0b;}
+.swatch{  height:120px;  border-radius:18px;  overflow:hidden;  border:1px solid rgba(0,0,0,.12);  background:var(--sw,#fff);}
+.swatch img{  width:100%;  height:100%;  object-fit:cover;}
+
