@@ -5,4 +5,4 @@
 @media(max-width:900px){.menu{display:none}.mobile-toggle{display:block}.stats-grid,.products,.process,.colors,.split,.footer-grid,.contact-grid,.cta{grid-template-columns:1fr}.section{padding:65px 0}.hero{min-height:82vh}.hero h1{font-size:3rem}.stats{margin-top:0}.float-card{position:static;margin-top:16px}.cta{padding:34px}.nav{height:68px}}
 
 .brand { background: rgba(255,255,255,.97);  padding: 8px 12px;  border-radius: 22px;  box-shadow: 0 8px 22px rgba(0,0,0,.18);  min-width: unset;}
-.brand-logo {  height: 58px;  width: auto;  display: block;}
+.brand-logo {  height: 52px;  width: auto;  display: block;}
