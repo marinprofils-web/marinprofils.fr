@@ -4,16 +4,108 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Contact | Marin Profils" description="Contactez Marin Profils pour une demande de devis professionnel en tôles acier, couverture et bardage.">
   <section class="page-hero"><div class="container"><span class="eyebrow" style="color:white">Contact</span><h1 class="title">Demande de devis professionnel</h1><p class="lead">Marin Profils travaille exclusivement avec les professionnels. Les particuliers sont orientés vers le site dédié tôle imitation tuile.</p></div></section>
   <section class="section"><div class="container grid contact-grid">
-    <form class="card form" style="padding:28px" name="contact" method="post" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact" />
-      <input name="entreprise" placeholder="Entreprise" required />
-      <input name="nom" placeholder="Nom / contact" required />
-      <input type="email" name="email" placeholder="Email" required />
-      <input name="telephone" placeholder="Téléphone" />
-      <select name="produit"><option>Produit concerné</option><option>Tôle imitation tuile</option><option>Bac acier</option><option>Bardage</option><option>Accessoires</option></select>
-      <textarea name="message" placeholder="Longueurs, quantités, couleur, lieu de livraison..."></textarea>
-      <button class="btn primary" type="submit">Envoyer la demande</button>
-    </form>
+    
+<form
+  class="card form"
+  style="padding:28px"
+  action="https://formsubmit.co/marinprofils@gmail.com"
+  method="POST"
+>
+  <input
+    type="hidden"
+    name="_subject"
+    value="Nouvelle demande de devis - Marin Profils"
+  />
+
+  <input
+    type="hidden"
+    name="_template"
+    value="table"
+  />
+
+  <input
+    type="hidden"
+    name="_captcha"
+    value="false"
+  />
+
+  <input
+    type="hidden"
+    name="_next"
+    value="https://marinprofils.fr/merci"
+  />
+
+  <label for="entreprise">Entreprise *</label>
+  <input
+    id="entreprise"
+    name="entreprise"
+    type="text"
+    placeholder="Nom de l’entreprise"
+    required
+  />
+
+  <label for="nom">Nom du contact *</label>
+  <input
+    id="nom"
+    name="nom"
+    type="text"
+    placeholder="Nom et prénom"
+    required
+  />
+
+  <label for="email">Adresse e-mail *</label>
+  <input
+    id="email"
+    name="email"
+    type="email"
+    placeholder="contact@entreprise.fr"
+    required
+  />
+
+  <label for="telephone">Téléphone</label>
+  <input
+    id="telephone"
+    name="telephone"
+    type="tel"
+    placeholder="06 00 00 00 00"
+  />
+
+  <label for="produit">Produit concerné *</label>
+  <select id="produit" name="produit" required>
+    <option value="" disabled selected>Sélectionnez un produit</option>
+    <option value="Tôle imitation tuile">Tôle imitation tuile</option>
+    <option value="Bac acier de couverture">Bac acier de couverture</option>
+    <option value="Bardage acier">Bardage acier</option>
+    <option value="Accessoires">Accessoires</option>
+    <option value="Autre demande">Autre demande</option>
+  </select>
+
+  <label for="message">Description du projet *</label>
+  <textarea
+    id="message"
+    name="message"
+    placeholder="Longueurs, quantités, épaisseur, couleur, commune ou département de livraison..."
+    required
+  ></textarea>
+
+  <label class="form-consent">
+    <input type="checkbox" name="consentement" required />
+    <span>
+      J’accepte que les informations transmises soient utilisées pour répondre
+      à ma demande de devis.
+    </span>
+  </label>
+
+  <button class="btn primary" type="submit">
+    Envoyer la demande
+  </button>
+
+  <p class="form-note">
+    Réponse généralement sous 24 heures ouvrées.
+  </p>
+   
+
+</form>
     <div class="card" style="padding:34px"><h2 class="title" style="font-size:2.1rem">Marin Profils</h2><p class="lead">Fabricant de profils acier en Dordogne pour professionnels du bâtiment, négoces et industriels.</p><div class="map">Carte / coordonnées à compléter</div><p><strong>Particulier ?</strong><br/>Rendez-vous sur le site dédié : tole-imitation-tuile.fr</p></div>
   </div></section>
 </Layout>
