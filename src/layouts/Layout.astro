@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-const { title = 'Marin Profils | Fabricant français de profils acier sur mesure', description = 'Marin Profils fabrique en Dordogne des tôles de couverture, bacs acier, bardages et accessoires acier sur mesure pour les professionnels.' } = Astro.props;
+const { title = 'Marin Profils | Fabricant français de tôles  acier sur mesure', description = 'Marin Profils fabrique en Dordogne des tôles de couverture, bacs acier, bardages et accessoires acier sur mesure pour les professionnels.' } = Astro.props;
 ---
 <!doctype html>
 <html lang="fr">
@@ -11,7 +11,10 @@ const { title = 'Marin Profils | Fabricant français de profils acier sur mesure
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title}</title>
-    <link rel="icon" href="/favicon.svg" />
+   <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
@@ -19,7 +22,8 @@ const { title = 'Marin Profils | Fabricant français de profils acier sur mesure
     <script type="application/ld+json" set:html={JSON.stringify({
       '@context':'https://schema.org','@type':'Organization',name:'Marin Profils',url:'https://marinprofils.fr',description
     })}></script>
-  </head>
+
+</head>
   <body>
     <Header />
     <main><slot /></main>
