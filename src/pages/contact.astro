@@ -1,111 +1,323 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="Contact | Marin Profils" description="Contactez Marin Profils pour une demande de devis professionnel en tôles acier, couverture et bardage.">
-  <section class="page-hero"><div class="container"><span class="eyebrow" style="color:white">Contact</span><h1 class="title">Demande de devis professionnel</h1><p class="lead">Marin Profils travaille exclusivement avec les professionnels. Les particuliers sont orientés vers le site dédié tôle imitation tuile.</p></div></section>
-  <section class="section"><div class="container grid contact-grid">
-    
-<form
-  class="card form"
-  style="padding:28px"
-  action="https://formsubmit.co/marinprofils@gmail.com"
-  method="POST"
+
+<Layout
+  title="Contact et demande de devis professionnel | Marin Profils"
+  description="Contactez Marin Profils, fabricant français de tôles de couverture et de bardage sur mesure en Dordogne. Demandez votre devis professionnel."
 >
-  <input
-    type="hidden"
-    name="_subject"
-    value="Nouvelle demande de devis - Marin Profils"
-  />
+  <section class="page-hero contact-hero">
+    <div class="container">
+      <span class="eyebrow contact-hero-eyebrow">
+        Contact professionnel
+      </span>
 
-  <input
-    type="hidden"
-    name="_template"
-    value="table"
-  />
+      <h1 class="title">
+        Demande de devis pour vos tôles acier sur mesure
+      </h1>
 
-  <input
-    type="hidden"
-    name="_captcha"
-    value="false"
-  />
+      <p class="lead">
+        Marin Profils accompagne les couvreurs, charpentiers, métalliers,
+        artisans, négoces et professionnels du bâtiment pour leurs projets
+        de couverture et de bardage acier.
+      </p>
+    </div>
+  </section>
 
-  <input
-    type="hidden"
-    name="_next"
-    value="https://marinprofils.fr/merci"
-  />
+  <section class="section contact-section">
+    <div class="container contact-layout">
 
-  <label for="entreprise">Entreprise *</label>
-  <input
-    id="entreprise"
-    name="entreprise"
-    type="text"
-    placeholder="Nom de l’entreprise"
-    required
-  />
+      <!-- Formulaire -->
+      <div class="contact-form-column">
+        <div class="contact-heading">
+          <span class="eyebrow">Votre projet</span>
 
-  <label for="nom">Nom du contact *</label>
-  <input
-    id="nom"
-    name="nom"
-    type="text"
-    placeholder="Nom et prénom"
-    required
-  />
+          <h2 class="contact-title">
+            Recevez une proposition adaptée à votre besoin
+          </h2>
 
-  <label for="email">Adresse e-mail *</label>
-  <input
-    id="email"
-    name="email"
-    type="email"
-    placeholder="contact@entreprise.fr"
-    required
-  />
+          <p>
+            Indiquez-nous les dimensions, les quantités, le coloris,
+            l’épaisseur souhaitée et le lieu de livraison. Plus votre demande
+            est précise, plus nous pourrons vous répondre efficacement.
+          </p>
+        </div>
 
-  <label for="telephone">Téléphone</label>
-  <input
-    id="telephone"
-    name="telephone"
-    type="tel"
-    placeholder="06 00 00 00 00"
-  />
+        <form
+          class="card form contact-form"
+          action="https://formsubmit.co/marinprofils@gmail.com"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nouvelle demande de devis - Site Marin Profils"
+          />
 
-  <label for="produit">Produit concerné *</label>
-  <select id="produit" name="produit" required>
-    <option value="" disabled selected>Sélectionnez un produit</option>
-    <option value="Tôle imitation tuile">Tôle imitation tuile</option>
-    <option value="Bac acier de couverture">Bac acier de couverture</option>
-    <option value="Bardage acier">Bardage acier</option>
-    <option value="Accessoires">Accessoires</option>
-    <option value="Autre demande">Autre demande</option>
-  </select>
+          <input
+            type="hidden"
+            name="_template"
+            value="table"
+          />
 
-  <label for="message">Description du projet *</label>
-  <textarea
-    id="message"
-    name="message"
-    placeholder="Longueurs, quantités, épaisseur, couleur, commune ou département de livraison..."
-    required
-  ></textarea>
+          <input
+            type="hidden"
+            name="_captcha"
+            value="false"
+          />
 
-  <label class="form-consent">
-    <input type="checkbox" name="consentement" required />
-    <span>
-      J’accepte que les informations transmises soient utilisées pour répondre
-      à ma demande de devis.
-    </span>
-  </label>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://marinprofils.fr/merci"
+          />
 
-  <button class="btn primary" type="submit">
-    Envoyer la demande
-  </button>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="entreprise">Entreprise *</label>
 
-  <p class="form-note">
-    Réponse généralement sous 24 heures ouvrées.
-  </p>
-   
+              <input
+                id="entreprise"
+                name="entreprise"
+                type="text"
+                placeholder="Nom de votre entreprise"
+                autocomplete="organization"
+                required
+              />
+            </div>
 
-</form>
-    <div class="card" style="padding:34px"><h2 class="title" style="font-size:2.1rem">Marin Profils</h2><p class="lead">Fabricant de profils acier en Dordogne pour professionnels du bâtiment, négoces et industriels.</p><div class="map">Carte / coordonnées à compléter</div><p><strong>Particulier ?</strong><br/>Rendez-vous sur le site dédié : tole-imitation-tuile.fr</p></div>
-  </div></section>
+            <div class="form-field">
+              <label for="nom">Nom du contact *</label>
+
+              <input
+                id="nom"
+                name="nom"
+                type="text"
+                placeholder="Nom et prénom"
+                autocomplete="name"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="email">Adresse e-mail *</label>
+
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="contact@entreprise.fr"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="telephone">Téléphone *</label>
+
+              <input
+                id="telephone"
+                name="telephone"
+                type="tel"
+                placeholder="06 00 00 00 00"
+                autocomplete="tel"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="produit">Produit concerné *</label>
+
+              <select id="produit" name="produit" required>
+                <option value="" disabled selected>
+                  Sélectionnez un produit
+                </option>
+
+                <option value="Tôle imitation tuile">
+                  Tôle imitation tuile
+                </option>
+
+                <option value="Bac acier de couverture">
+                  Bac acier de couverture
+                </option>
+
+                <option value="Bardage acier">
+                  Bardage acier
+                </option>
+
+                <option value="Accessoires et pliages">
+                  Accessoires et pliages
+                </option>
+
+                <option value="Autre demande">
+                  Autre demande
+                </option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="departement">Département de livraison</label>
+
+              <input
+                id="departement"
+                name="departement_livraison"
+                type="text"
+                placeholder="Exemple : 24"
+                inputmode="numeric"
+              />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Description du projet *</label>
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Indiquez les longueurs, les quantités, l’épaisseur, le coloris, le type de bâtiment et toute information utile..."
+              required
+            ></textarea>
+          </div>
+
+          <label class="form-consent">
+            <input
+              type="checkbox"
+              name="consentement"
+              value="Accepté"
+              required
+            />
+
+            <span>
+              J’accepte que les informations transmises soient utilisées
+              uniquement pour répondre à ma demande.
+            </span>
+          </label>
+
+          <button class="btn primary contact-submit" type="submit">
+            Envoyer ma demande de devis
+            <span aria-hidden="true">→</span>
+          </button>
+
+          <p class="form-note">
+            Vos informations ne sont ni revendues ni utilisées à des fins
+            publicitaires.
+          </p>
+        </form>
+      </div>
+
+      <!-- Coordonnées -->
+      <aside class="contact-info-column">
+        <div class="card contact-info-card">
+          <span class="eyebrow">Marin Profils</span>
+
+          <h2>Échangez directement avec notre équipe</h2>
+
+          <p class="contact-intro">
+            Fabricant de tôles acier sur mesure pour les professionnels,
+            basé à Marsac-sur-l’Isle en Dordogne.
+          </p>
+
+          <div class="contact-details">
+            <a class="contact-detail" href="tel:+33553537802">
+              <span class="contact-detail-icon" aria-hidden="true">☎</span>
+
+              <span>
+                <small>Téléphone</small>
+                <strong>05 53 53 78 02</strong>
+              </span>
+            </a>
+
+            <a
+              class="contact-detail"
+              href="mailto:marinprofils@gmail.com"
+            >
+              <span class="contact-detail-icon" aria-hidden="true">✉</span>
+
+              <span>
+                <small>Adresse e-mail</small>
+                <strong>marinprofils@gmail.com</strong>
+              </span>
+            </a>
+
+            <div class="contact-detail">
+              <span class="contact-detail-icon" aria-hidden="true">⌖</span>
+
+              <span>
+                <small>Atelier de fabrication</small>
+                <strong>
+                  10 impasse de l’Artisanat<br />
+                  24430 Marsac-sur-l’Isle
+                </strong>
+              </span>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-detail-icon" aria-hidden="true">🚚</span>
+
+              <span>
+                <small>Expédition</small>
+                <strong>
+                  Retrait à l’atelier ou livraison en France
+                </strong>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card contact-professional-card">
+          <span class="contact-professional-label">
+            Vente réservée aux professionnels
+          </span>
+
+          <h3>Vous êtes un particulier ?</h3>
+
+          <p>
+            Retrouvez notre offre dédiée aux particuliers, nos produits,
+            nos tarifs et nos conseils de pose sur le site spécialisé.
+          </p>
+
+          <a
+            class="btn primary"
+            href="https://www.tole-imitation-tuile.fr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Accéder au site particuliers
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <section class="section soft contact-reassurance">
+    <div class="container">
+      <div class="contact-reassurance-grid">
+        <article>
+          <strong>24 à 48 h</strong>
+          <span>Délai habituel de fabrication</span>
+        </article>
+
+        <article>
+          <strong>0,80 à 6 m</strong>
+          <span>Longueurs fabriquées sur mesure</span>
+        </article>
+
+        <article>
+          <strong>Dordogne</strong>
+          <span>Fabrication dans notre atelier</span>
+        </article>
+
+        <article>
+          <strong>France</strong>
+          <span>Livraison possible sur dépôt ou chantier</span>
+        </article>
+      </div>
+    </div>
+  </section>
 </Layout>
