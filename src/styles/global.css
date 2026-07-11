@@ -143,8 +143,9 @@ img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
         object-position:75% 35%;
     }
 
-   .manufacturing-card{
-    transform:translateX(25%);
+.manufacturing-card{
+    right:50%;bottom:-24px;
+    transform:translateX(50%);
 }
     .manufacturing-list{        grid-template-columns:1fr;    }
 }
