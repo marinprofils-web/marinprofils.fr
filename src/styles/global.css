@@ -122,7 +122,10 @@ img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
 .manufacturing-image>img{    width:100%;    height:610px;    object-fit:cover;    object-position:center 38%;    border-radius:32px;    box-shadow:var(--shadow);
 }
 .manufacturing-card{
-    transform:translateX(25%);
+    left:40px;
+    right:auto;
+    bottom:-24px;
+    transform:none;
 }
 
 .manufacturing-card-label{    display:inline-flex;    align-items:center;    justify-content:center;    gap:8px;    margin-bottom:16px;    padding:7px 12px;    border-radius:999px;    background:var(--soft);    color:var(--blue);    font-size:.78rem;    font-weight:900;    text-transform:uppercase;    letter-spacing:.04em;}
@@ -138,16 +141,21 @@ img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
 
 @media (max-width:900px){
     .manufacturing-image>img{
-        height:390px;
-        object-fit:cover;
-        object-position:75% 35%;
+        height:460px;
     }
 
-.manufacturing-card{
-    right:50%;bottom:-24px;
-    transform:translateX(50%);
-}
-    .manufacturing-list{        grid-template-columns:1fr;    }
+    .manufacturing-card{
+        position:relative;
+        right:auto;
+        bottom:auto;
+        transform:none;
+        width:100%;
+        margin-top:-70px;
+    }
+
+    .manufacturing-list{
+        grid-template-columns:1fr;
+    }
 }
 
 @media (max-width:520px){
