@@ -1,8 +1,128 @@
 ---
-import Layout from '../layouts/Layout.astro'; import Products from '../components/Products.astro'; import CTA from '../components/CTA.astro';
+import Layout from '../layouts/Layout.astro';
+import Products from '../components/Products.astro';
+import CTA from '../components/CTA.astro';
 ---
-<Layout title="Produits | Marin Profils" description="Tôles imitation tuile, bacs acier, bardages et accessoires acier sur mesure pour les professionnels.">
-  <section class="page-hero"><div class="container"><span class="eyebrow" style="color:white">Produits</span><h1 class="title">Nos solutions acier pour la couverture et le bardage</h1><p class="lead">Fabricant français de tôles acier sur mesure pour les professionnels. Découvrez notre gamme de tôles imitation tuile, bacs acier, bardages et accessoires de finition.</p></div></section>
+
+<Layout
+  title="Tôles acier sur mesure pour la couverture et le bardage | Marin Profils"
+  description="Découvrez la gamme Marin Profils : tôles imitation tuile, bacs acier de couverture, bardages acier et accessoires sur mesure pour les professionnels."
+>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+
+      <span class="eyebrow" style="color:white">
+        Gamme professionnelle
+      </span>
+
+      <h1 class="title">
+        Tôles acier sur mesure pour la couverture, le bardage et les finitions
+      </h1>
+
+      <p class="lead">
+        Marin Profils fabrique en Dordogne une gamme complète de tôles acier
+        destinées aux professionnels du bâtiment, de l'industrie, de
+        l'agriculture et des négoces. Toutes nos fabrications sont réalisées
+        sur mesure afin de répondre précisément aux contraintes de chaque
+        chantier.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section">
+    <div class="container">
+
+      <span class="eyebrow">
+        Notre gamme
+      </span>
+
+      <h2 class="title">
+        Des solutions adaptées à tous les projets de couverture et de bardage
+      </h2>
+
+      <p class="lead">
+        Notre gamme couvre aussi bien les toitures traditionnelles que les
+        bâtiments industriels, agricoles, artisanaux ou commerciaux.
+        En complément des profils acier, nous proposons l'ensemble des
+        accessoires nécessaires à une pose complète et durable.
+      </p>
+
+    </div>
+  </section>
+
   <Products />
+
+  <!-- Pourquoi nous -->
+  <section class="section soft">
+
+    <div class="container">
+
+      <span class="eyebrow">
+        Pourquoi Marin Profils ?
+      </span>
+
+      <h2 class="title">
+        Un fabricant au service des professionnels
+      </h2>
+
+      <div class="grid why-grid">
+
+        ...
+        (on fera cette section ensuite)
+        ...
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Commande -->
+  <section class="section">
+
+    <div class="container">
+
+      <span class="eyebrow">
+        Comment commander ?
+      </span>
+
+      <h2 class="title">
+        Un processus simple et rapide
+      </h2>
+
+      ...
+      (on fera cette section ensuite)
+      ...
+
+    </div>
+
+  </section>
+
+  <!-- FAQ -->
+  <section class="section soft">
+
+    <div class="container">
+
+      <span class="eyebrow">
+        Questions fréquentes
+      </span>
+
+      <h2 class="title">
+        Les réponses aux questions les plus courantes
+      </h2>
+
+      ...
+      (FAQ)
+      ...
+
+    </div>
+
+  </section>
+
   <CTA />
+
 </Layout>
