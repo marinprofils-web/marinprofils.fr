@@ -1,6 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Products from '../components/Products.astro';
+import WhyMarin from '../components/WhyMarin.astro';
+import OrderSteps from '../components/OrderSteps.astro';
+import FAQ from '../components/FAQ.astro';
 import CTA from '../components/CTA.astro';
 ---
 
@@ -57,71 +60,13 @@ import CTA from '../components/CTA.astro';
   <Products />
 
   <!-- Pourquoi nous -->
-  <section class="section soft">
-
-    <div class="container">
-
-      <span class="eyebrow">
-        Pourquoi Marin Profils ?
-      </span>
-
-      <h2 class="title">
-        Un fabricant au service des professionnels
-      </h2>
-
-      <div class="grid why-grid">
-
-        ...
-        (on fera cette section ensuite)
-        ...
-
-      </div>
-
-    </div>
-
-  </section>
+  <WhyMarin />
 
   <!-- Commande -->
-  <section class="section">
-
-    <div class="container">
-
-      <span class="eyebrow">
-        Comment commander ?
-      </span>
-
-      <h2 class="title">
-        Un processus simple et rapide
-      </h2>
-
-      ...
-      (on fera cette section ensuite)
-      ...
-
-    </div>
-
-  </section>
+ <OrderSteps />
 
   <!-- FAQ -->
-  <section class="section soft">
-
-    <div class="container">
-
-      <span class="eyebrow">
-        Questions fréquentes
-      </span>
-
-      <h2 class="title">
-        Les réponses aux questions les plus courantes
-      </h2>
-
-      ...
-      (FAQ)
-      ...
-
-    </div>
-
-  </section>
+  <FAQ />
 
   <CTA />
 
