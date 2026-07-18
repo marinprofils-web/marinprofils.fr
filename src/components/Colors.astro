@@ -28,6 +28,41 @@ const {  product = "all"} = Astro.props;
         </div>
       </div>
     </div>
+<div class="finish-block">
+  <h3>Finition mate texturée - garantie 15 ans</h3>
+
+  <p class="finish-description">
+    Revêtement mat texturé offrant un aspect haut de gamme, une excellente résistance aux rayures et un rendu particulièrement apprécié pour les bâtiments industriels, agricoles, tertiaires et résidentiels.
+  </p>
+  <h4>Épaisseur 0,50 mm</h4>
+
+  <div class="grid colors">
+
+    <div class="card color-card"><div class="swatch" style="--sw:#050505"></div><span class="status-badge stock">En stock</span><h3><span class="dot stock"></span>RAL 9005</h3><p>Mat texturé · 0,50 mm</p></div>
+    <div class="card color-card"><div class="swatch" style="--sw:#2f4934"></div><span class="status-badge stock">En stock</span><h3><span class="dot stock"></span>RAL 6020</h3><p>Mat texturé · 0,50 mm</p></div>
+    <div class="card color-card"><div class="swatch" style="--sw:#50565c"></div><span class="status-badge stock">En stock</span><h3><span class="dot stock"></span>RAL 7024</h3><p>Mat texturé · 0,50 mm</p></div>
+    <div class="card color-card"><div class="swatch" style="--sw:#8f3d1f"></div><span class="status-badge stock">En stock</span><h3><span class="dot stock"></span>RAL 8004</h3><p>Mat texturé · 0,50 mm</p></div>
+   
+    <div class="card color-card"><div class="swatch" style="--sw:#5e2028"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 3005</h3><p>Mat texturé · 0,50 mm</p></div>
+    <div class="card color-card"><div class="swatch" style="--sw:#642424"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 3009</h3><p>Mat texturé · 0,50 mm</p></div>
+    <div class="card color-card"><div class="swatch" style="--sw:#383e42"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 7016</h3><p>Mat texturé · 0,50 mm</p></div>
+    <div class="card color-card"><div class="swatch" style="--sw:#44322d"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 8017</h3><p>Mat texturé · 0,50 mm</p></div>
+    <div class="card color-card"><div class="swatch" style="--sw:#3d342f"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 8019</h3><p>Mat texturé · 0,50 mm</p></div>
+    
+  </div>
+{product !== "imituil" && (
+  <>
+  <h4>Épaisseur 0,60 mm</h4>
+
+  <div class="grid colors">
+    <div class="card color-card"><div class="swatch" style="--sw:#5e2028"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 3005</h3><p>Mat texturé · 0,60 mm</p></div>
+    <div class="card color-card"><div class="swatch" style="--sw:#44322d"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 8017</h3> <p>Mat texturé · 0,60 mm</p></div>
+    <div class="card color-card"><div class="swatch" style="--sw:#3d342f"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 8019</h3><p>Mat texturé · 0,60 mm</p>    </div>
+    <div class="card color-card"><div class="swatch" style="--sw:#050505"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 9005</h3><p>Mat texturé · 0,60 mm</p></div>
+  </div>
+</div>
+ </>
+)}
 
     <div class="finish-block">
       <h3>Finition brillante - garantie 10 ans</h3>
@@ -66,41 +101,6 @@ const {  product = "all"} = Astro.props;
       </div>
     </div>
 
-<div class="finish-block">
-  <h3>Finition mate texturée - garantie 15 ans</h3>
-
-  <p class="finish-description">
-    Revêtement mat texturé offrant un aspect haut de gamme, une excellente résistance aux rayures et un rendu particulièrement apprécié pour les bâtiments industriels, agricoles, tertiaires et résidentiels.
-  </p>
-  <h4>Épaisseur 0,50 mm</h4>
-
-  <div class="grid colors">
-
-    <div class="card color-card"><div class="swatch" style="--sw:#050505"></div><span class="status-badge stock">En stock</span><h3><span class="dot stock"></span>RAL 9005</h3><p>Mat texturé · 0,50 mm</p></div>
-    <div class="card color-card"><div class="swatch" style="--sw:#2f4934"></div><span class="status-badge stock">En stock</span><h3><span class="dot stock"></span>RAL 6020</h3><p>Mat texturé · 0,50 mm</p></div>
-    <div class="card color-card"><div class="swatch" style="--sw:#50565c"></div><span class="status-badge stock">En stock</span><h3><span class="dot stock"></span>RAL 7024</h3><p>Mat texturé · 0,50 mm</p></div>
-    <div class="card color-card"><div class="swatch" style="--sw:#8f3d1f"></div><span class="status-badge stock">En stock</span><h3><span class="dot stock"></span>RAL 8004</h3><p>Mat texturé · 0,50 mm</p></div>
-   
-    <div class="card color-card"><div class="swatch" style="--sw:#5e2028"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 3005</h3><p>Mat texturé · 0,50 mm</p></div>
-    <div class="card color-card"><div class="swatch" style="--sw:#642424"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 3009</h3><p>Mat texturé · 0,50 mm</p></div>
-    <div class="card color-card"><div class="swatch" style="--sw:#383e42"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 7016</h3><p>Mat texturé · 0,50 mm</p></div>
-    <div class="card color-card"><div class="swatch" style="--sw:#44322d"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 8017</h3><p>Mat texturé · 0,50 mm</p></div>
-    <div class="card color-card"><div class="swatch" style="--sw:#3d342f"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 8019</h3><p>Mat texturé · 0,50 mm</p></div>
-    
-  </div>
-{product !== "imituil" && (
-  <>
-  <h4>Épaisseur 0,60 mm</h4>
-
-  <div class="grid colors">
-    <div class="card color-card"><div class="swatch" style="--sw:#5e2028"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 3005</h3><p>Mat texturé · 0,60 mm</p></div>
-    <div class="card color-card"><div class="swatch" style="--sw:#44322d"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 8017</h3> <p>Mat texturé · 0,60 mm</p></div>
-    <div class="card color-card"><div class="swatch" style="--sw:#3d342f"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 8019</h3><p>Mat texturé · 0,60 mm</p>    </div>
-    <div class="card color-card"><div class="swatch" style="--sw:#050505"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 9005</h3><p>Mat texturé · 0,60 mm</p></div>
-  </div>
-</div>
- </>
-)}
 
 <div class="finish-block">
   <h3>Finition imitation bois - garantie 15 ans</h3>
