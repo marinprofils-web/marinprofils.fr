@@ -424,25 +424,50 @@ a.contact-detail:hover{    transform:translateY(-2px);    border-color:rgba(0,74
 }
 
 /* ========================================
-   RESPONSIVE PROJECT GALLERY
+   PROJECTS GALLERY
 ======================================== */
 
-@media (max-width: 1000px) {  
-  .gallery-grid {    grid-template-columns: repeat(2, minmax(0, 1fr));  }
-  .gallery-feature {    grid-column: 1 / -1;  }
+.projects-gallery {  background: #ffffff;}
+.projects-gallery .section-heading {  max-width: 760px;  margin-bottom: 42px;}
+.projects-gallery .section-heading h2 {  margin: 10px 0 14px;}
+.projects-gallery .section-heading p {  margin: 0;  color: #66728a;  line-height: 1.7;}
+.gallery-grid {  display: grid;  grid-template-columns: repeat(2, minmax(0, 1fr));  gap: 24px;}
+.gallery-feature {  grid-column: 1 / -1;  display: grid;  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);  overflow: hidden;  background: #ffffff;  border: 1px solid rgba(15, 38, 73, 0.12);  border-radius: 24px;  box-shadow: 0 18px 45px rgba(16, 41, 77, 0.08);}
+.gallery-feature > img {  width: 100%;  height: 100%;  min-height: 440px;  display: block;  object-fit: cover;}
+.gallery-content {  display: flex;  flex-direction: column;  justify-content: center;  padding: 38px;}
+.gallery-badge {  align-self: flex-start;  margin-bottom: 16px;  padding: 7px 12px;  color: #0755bd;  background: #edf5ff;  border-radius: 999px;  font-size: 0.72rem;  font-weight: 800;  letter-spacing: 0.08em;  text-transform: uppercase;}
+.gallery-content h3 {  margin: 0;  color: #0b1629;  font-size: clamp(1.5rem, 2.5vw, 2.2rem);  line-height: 1.15;}
+.gallery-content p {  margin: 16px 0 0;  color: #66728a;  line-height: 1.7;}
+.gallery-card {  overflow: hidden;  background: #ffffff;  border: 1px solid rgba(15, 38, 73, 0.12);  border-radius: 20px;  box-shadow: 0 14px 34px rgba(16, 41, 77, 0.07);}
+.gallery-card img {  width: 100%;  aspect-ratio: 16 / 10;  display: block;  object-fit: cover;  transition: transform 0.4s ease;}
+.gallery-card:hover img,
+.gallery-feature:hover > img {  transform: scale(1.025);}
+.gallery-card-content {  padding: 20px 22px 22px;}
+.gallery-card-content h3 {  margin: 0;  color: #0b1629;  font-size: 1.1rem;}
+.gallery-card-content p {  margin: 7px 0 0;  color: #66728a;  font-size: 0.92rem;}
+.gallery-footer {  display: flex;  align-items: center;  justify-content: space-between;  gap: 32px;  margin-top: 32px;  padding: 28px 30px;  background: #f3f7fd;  border: 1px solid rgba(15, 38, 73, 0.1);  border-radius: 20px;}
+.gallery-footer > div {  max-width: 680px;}
+.gallery-footer h3 {  margin: 0 0 9px;  color: #0b1629;  font-size: 1.35rem;}
+.gallery-footer p {  margin: 0;  color: #66728a;  line-height: 1.65;}
+.gallery-footer .btn {  flex: 0 0 auto;}
+
+@media (max-width: 1000px) {
+  .gallery-feature {    grid-template-columns: 1fr;  }
+  .gallery-feature > img {   min-height: 0;    aspect-ratio: 16 / 9;  }
+  .gallery-content {    padding: 28px;  }
   .gallery-footer {    align-items: flex-start;    flex-direction: column;  }
 }
 
-@media (max-width: 700px) {  .projects-gallery .section-heading {    margin-bottom: 28px;  }
-  .projects-gallery .section-heading h2 {    font-size: clamp(2rem, 9vw, 2.8rem);  }
-  .gallery-grid {    grid-template-columns: 1fr;    gap: 18px;  }
-  .gallery-feature {    grid-column: auto;  }
-  .gallery-feature img {    aspect-ratio: 4 / 3;  }
+@media (max-width: 700px) {
+  .projects-gallery .section-heading {    margin-bottom: 28px;  }
+  .gallery-grid {   grid-template-columns: 1fr;    gap: 18px;  }
+  .gallery-feature {    border-radius: 18px;  }
+  .gallery-feature > img {    aspect-ratio: 4 / 3;  }
   .gallery-content {    padding: 22px;  }
-  .gallery-content h3 {    font-size: 1.35rem;  }
+  .gallery-content h3 {    font-size: 1.4rem;  }
+  .gallery-card {    border-radius: 18px;  }
   .gallery-card img {    aspect-ratio: 4 / 3;  }
-  .gallery-card-content {    padding: 18px;  }
-  .gallery-footer {    align-items: stretch;    flex-direction: column;    gap: 20px;    padding: 22px;  }
-  .gallery-footer h3 {    font-size: 1.3rem;  }
-  .gallery-footer .btn {   width: 100%;    text-align: center;  }
+  .gallery-card-content {    padding: 18px 19px 20px;  }
+  .gallery-footer {    align-items: stretch;    gap: 20px;    padding: 22px;  }
+  .gallery-footer .btn {    width: 100%;    text-align: center;  }
 }
