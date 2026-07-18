@@ -1,131 +1,129 @@
-<section class="section projects-gallery">
-  <div class="container">
+---
+const {
+  product = "imituil"
+} = Astro.props;
 
-    <div class="section-heading">
-      <span class="eyebrow">RÉALISATIONS</span>
+const galleries = {
+  imituil: {
+    eyebrow: "RÉALISATIONS",
 
-      <h2>Découvrez quelques réalisations en tôle imitation tuile</h2>
+    title: "Découvrez quelques réalisations en tôle imitation tuile",
 
-      <p>
-        Nos tôles imitation tuile fabriquées sur mesure équipent aussi bien des
-        abris de jardin, garages, carports, chalets que des bâtiments
-        résidentiels ou agricoles. Découvrez quelques réalisations illustrant la
-        qualité de nos profils, de nos finitions et de nos accessoires.
-      </p>
-    </div>
+    introduction:
+      "Nos tôles imitation tuile fabriquées sur mesure équipent aussi bien des abris de jardin, garages, carports, chalets que des bâtiments résidentiels ou agricoles. Découvrez quelques réalisations illustrant la qualité de nos profils, de nos finitions et de nos accessoires.",
 
-    <div class="gallery-grid">
+    featured: {
+      image:
+        "/images/realisations/tole-imitation-tuile/toiture-tole-imitation-tuile-ral-8004.jpg",
+      alt: "Toiture en tôle imitation tuile RAL 8004 mat texturé",
+      title: "Toiture imitation tuile RAL 8004 mat texturé",
+      description:
+        "Couverture fabriquée sur mesure avec accessoires assortis, comprenant faîtage, rives et visserie laquée pour une finition homogène et durable."
+    },
 
-      <!-- Réalisation principale -->
+    projects: [
+      {
+        image:
+          "/images/realisations/tole-imitation-tuile/toiture-tole-imitation-tuile-ral-7024.jpg",
+        alt: "Toiture d'abri de jardin en tôle imitation tuile RAL 7024",
+        title: "Abri de jardin",
+        finish: "RAL 7024 mat texturé"
+      },
+      {
+        image:
+          "/images/realisations/tole-imitation-tuile/carport-tole-imitation-tuile-ral-8004.jpg",
+        alt: "Carport bois avec toiture en tôle imitation tuile RAL 8004",
+        title: "Carport bois",
+        finish: "RAL 8004 mat texturé"
+      },
+      {
+        image:
+          "/images/realisations/tole-imitation-tuile/chalet-bois-tole-imitation-tuile-ral-9005.jpg",
+        alt: "Chalet bois avec toiture en tôle imitation tuile RAL 9005",
+        title: "Chalet bois",
+        finish: "RAL 9005 mat texturé"
+      },
+      {
+        image:
+          "/images/realisations/tole-imitation-tuile/abri-bois-tole-imitation-tuile-ral-6020.jpg",
+        alt: "Abri bois avec toiture en tôle imitation tuile RAL 6020",
+        title: "Abri bois",
+        finish: "RAL 6020 mat texturé"
+      }
+    ],
 
-      <article class="gallery-feature">
+    footerTitle: "Vous avez un projet similaire ?",
 
-        <img
-          src="/images/realisations/tole-imitation-tuile/toiture-tole-imitation-tuile-ral-8004.jpg"
-          alt="Toiture en tôle imitation tuile RAL 8004 mat texturé"
-          loading="lazy"
-        />
+    footerText:
+      "Chaque toiture est fabriquée sur mesure dans notre atelier de Marsac-sur-l'Isle selon les dimensions de votre chantier. Nous proposons plusieurs coloris, des accessoires assortis et une fabrication rapide pour les professionnels."
+  }
+};
 
-        <div class="gallery-content">
+const gallery = galleries[product];
+---
 
-          <span class="gallery-badge">Projet réalisé</span>
+{gallery && (
+  <section id="realisations" class="section projects-gallery">
+    <div class="container">
 
-          <h3>Toiture imitation tuile RAL 8004 mat texturé</h3>
+      <div class="section-heading">
+        <span class="eyebrow">{gallery.eyebrow}</span>
 
-          <p>
-            Couverture fabriquée sur mesure avec accessoires assortis,
-            comprenant faîtage, rives et visserie laquée pour une finition
-            homogène et durable.
-          </p>
+        <h2>{gallery.title}</h2>
 
-        </div>
+        <p>{gallery.introduction}</p>
+      </div>
 
-      </article>
+      <div class="gallery-grid">
 
-      <!-- Réalisations secondaires -->
+        <article class="gallery-feature">
+          <img
+            src={gallery.featured.image}
+            alt={gallery.featured.alt}
+            loading="lazy"
+            width="1600"
+            height="900"
+          />
 
-      <article class="gallery-card">
+          <div class="gallery-content">
+            <span class="gallery-badge">Projet réalisé</span>
 
-        <img
-          src="/images/realisations/tole-imitation-tuile/toiture-tole-imitation-tuile-ral-7024.jpg"
-          alt="Toiture d'abri de jardin en tôle imitation tuile RAL 7024"
-          loading="lazy"
-        />
+            <h3>{gallery.featured.title}</h3>
 
-        <div class="gallery-card-content">
-          <h3>Abri de jardin</h3>
-          <p>RAL 7024 mat texturé</p>
-        </div>
+            <p>{gallery.featured.description}</p>
+          </div>
+        </article>
 
-      </article>
+        {gallery.projects.map((project) => (
+          <article class="gallery-card">
+            <img
+              src={project.image}
+              alt={project.alt}
+              loading="lazy"
+              width="800"
+              height="600"
+            />
 
-      <article class="gallery-card">
-
-        <img
-          src="/images/realisations/tole-imitation-tuile/carport-tole-imitation-tuile-ral-8004.jpg"
-          alt="Carport bois avec toiture en tôle imitation tuile RAL 8004"
-          loading="lazy"
-        />
-
-        <div class="gallery-card-content">
-          <h3>Carport bois</h3>
-          <p>RAL 8004 mat texturé</p>
-        </div>
-
-      </article>
-
-      <article class="gallery-card">
-
-        <img
-          src="/images/realisations/tole-imitation-tuile/chalet-bois-tole-imitation-tuile-ral-9005.jpg"
-          alt="Chalet bois avec toiture en tôle imitation tuile RAL 9005"
-          loading="lazy"
-        />
-
-        <div class="gallery-card-content">
-          <h3>Chalet bois</h3>
-          <p>RAL 9005 mat texturé</p>
-        </div>
-
-      </article>
-
-      <article class="gallery-card">
-
-        <img
-          src="/images/realisations/tole-imitation-tuile/abri-bois-tole-imitation-tuile-ral-6020.jpg"
-          alt="Abri bois avec toiture en tôle imitation tuile RAL 6020"
-          loading="lazy"
-        />
-
-        <div class="gallery-card-content">
-          <h3>Abri bois</h3>
-          <p>RAL 6020 mat texturé</p>
-        </div>
-
-      </article>
-
-    </div>
-
-    <div class="gallery-footer">
-
-      <div>
-
-        <h3>Vous avez un projet similaire&nbsp;?</h3>
-
-        <p>
-          Chaque toiture est fabriquée sur mesure dans notre atelier de
-          Marsac-sur-l'Isle selon les dimensions de votre chantier. Nous
-          proposons plusieurs coloris, des accessoires assortis et une
-          fabrication rapide pour les professionnels.
-        </p>
+            <div class="gallery-card-content">
+              <h3>{project.title}</h3>
+              <p>{project.finish}</p>
+            </div>
+          </article>
+        ))}
 
       </div>
 
-      <a href="/realisations" class="btn btn-outline">
-        Voir toutes nos réalisations
-      </a>
+      <div class="gallery-footer">
+        <div>
+          <h3>{gallery.footerTitle}</h3>
+          <p>{gallery.footerText}</p>
+        </div>
+
+        <a href="/realisations" class="btn btn-outline">
+          Voir toutes nos réalisations
+        </a>
+      </div>
 
     </div>
-
-  </div>
-</section>
+  </section>
+)}
