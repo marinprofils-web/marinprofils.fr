@@ -35,6 +35,7 @@ const {  product = "all"} = Astro.props;
         Finition brillante avec surface lisse et lumineuse, adaptée aux couvertures industrielles, agricoles, commerciales et aux bardages acier.
       </p>
 
+   {product !== "imituil" && (  <>
       <h4>Épaisseur 0,70 mm</h4>
       <div class="grid colors">
         <div class="card color-card"><div class="swatch" style="--sw:#ecebe2"></div><span class="status-badge stock">En stock</span><h3><span class="dot stock"></span>RAL 9002</h3><p>Brillant · 0,70 mm</p></div>
@@ -46,7 +47,8 @@ const {  product = "all"} = Astro.props;
         <div class="card color-card"><div class="swatch" style="--sw:#383e42"></div><span class="status-badge stock">En stock</span><h3><span class="dot stock"></span>RAL 7016</h3><p>Brillant · 0,60 mm</p></div>
         <div class="card color-card"><div class="swatch" style="--sw:#ecebe2"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 9002</h3><p>Brillant · 0,60 mm</p></div>    
       </div>
-
+  </>
+)}
       <h4>Épaisseur 0,50 mm</h4>
       <div class="grid colors">
         <div class="card color-card"><div class="swatch" style="--sw:#5e2028"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 3005</h3><p>Brillant · 0,50 mm</p></div>
@@ -86,7 +88,8 @@ const {  product = "all"} = Astro.props;
     <div class="card color-card"><div class="swatch" style="--sw:#3d342f"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 8019</h3><p>Mat texturé · 0,50 mm</p></div>
     
   </div>
-
+{product !== "imituil" && (
+  <>
   <h4>Épaisseur 0,60 mm</h4>
 
   <div class="grid colors">
@@ -96,6 +99,8 @@ const {  product = "all"} = Astro.props;
     <div class="card color-card"><div class="swatch" style="--sw:#050505"></div><span class="status-badge order">Sur commande</span><h3><span class="dot order"></span>RAL 9005</h3><p>Mat texturé · 0,60 mm</p></div>
   </div>
 </div>
+ </>
+)}
 
 <div class="finish-block">
   <h3>Finition imitation bois - garantie 15 ans</h3>
@@ -118,6 +123,8 @@ const {  product = "all"} = Astro.props;
       De nombreuses références RAL peuvent être fabriquées sur demande selon les quantités et les possibilités d'approvisionnement. N'hésitez pas à nous contacter pour étudier votre projet.
     </p>
   </div>
+
+{product === "all" && (
 <div class="thickness-guide">
   <span class="eyebrow">Guide de choix</span>
   <h2 class="title">Épaisseurs et applications</h2>
@@ -167,6 +174,6 @@ const {  product = "all"} = Astro.props;
     <strong> Conseil Marin Profils :</strong>Les épaisseurs 0,45 mm et 0,50 mm conviennent au bardage acier, aux bacs acier de couverture industrielle et aux tôles imitation tuile. Les épaisseurs 0,60 mm et 0,70 mm sont destinées au bardage acier et à la couverture industrielle.
   </p>
 </div>
-
+)}
 </div>
 </section>
