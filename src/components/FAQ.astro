@@ -1,3 +1,15 @@
+---
+const {  title = "Questions fréquentes",  lead = "Retrouvez les réponses aux questions les plus fréquentes concernant nos produits, notre fabrication et nos services."
+} = Astro.props;
+---
+
+---
+const {
+  title = "Tout savoir sur nos tôles acier sur mesure",
+  lead = "Retrouvez les principales informations sur nos tôles imitation tuile, nos bacs acier de couverture, nos bardages acier, nos accessoires, ainsi que sur nos délais de fabrication et nos solutions de livraison."
+} = Astro.props;
+---
+
 <section id="faq" class="section soft">
   <div class="container">
 
@@ -6,13 +18,11 @@
     </span>
 
     <h2 class="title">
-      Tout savoir sur nos tôles acier sur mesure
+      {title}
     </h2>
 
     <p class="lead">
-      Retrouvez les principales informations sur nos tôles imitation tuile,
-      nos bacs acier de couverture, nos bardages acier, nos accessoires,
-      ainsi que sur nos délais de fabrication et nos solutions de livraison.
+      {lead}
     </p>
 
     <div class="faq">
