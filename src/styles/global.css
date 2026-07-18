@@ -400,7 +400,7 @@ a.contact-detail:hover{    transform:translateY(-2px);    border-color:rgba(0,74
 #couleurs,
 #applications,
 #realisations,
-#guide d'achat,
+#guide-achat,
 #pourquoi-marin-profils,
 #faq,
 #devis{
@@ -417,7 +417,7 @@ a.contact-detail:hover{    transform:translateY(-2px);    border-color:rgba(0,74
 @media(max-width:900px){
     .product-anchor-nav{        top:68px;    }    
   .anchor-nav a{        min-height:40px;        padding:8px 12px;        border-color:rgba(0,74,173,.1);        background:#fff;        font-size:.8rem;    }
-   #presentation,#avantages,#caracteristiques,#couleurs,#applications,#realisations,#guide d'achat,#pourquoi-marin-profils,
+   #presentation,#avantages,#caracteristiques,#couleurs,#applications,#realisations,#guide-achat,#pourquoi-marin-profils,
 #faq,    #devis{  scroll-margin-top:130px;  }
 }
 /* ===== CONTENU SEO ===== */
